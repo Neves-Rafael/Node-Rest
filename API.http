@@ -1,1 +1,8 @@
-GET http://localhost:3333/hello
+POST http://localhost:3333/transactions
+Content-Type: application/json
+
+{
+  "title": "Card payment",
+  "amount": 500,
+  "type": "debit"
+}
