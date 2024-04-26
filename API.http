@@ -6,3 +6,11 @@ Content-Type: application/json
   "amount": 500,
   "type": "debit"
 }
+
+###
+
+GET http://localhost:3333/transactions
+
+###
+
+GET http://localhost:3333/transactions/b8d0d586-a05f-400f-bd1d-81118c65bee1
