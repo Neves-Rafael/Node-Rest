@@ -3,8 +3,8 @@ Content-Type: application/json
 
 {
   "title": "Card payment",
-  "amount": 500,
-  "type": "debit"
+  "amount": 5000,
+  "type": "credit"
 }
 
 ###
@@ -13,4 +13,8 @@ GET http://localhost:3333/transactions
 
 ###
 
-GET http://localhost:3333/transactions/b8d0d586-a05f-400f-bd1d-81118c65bee1
+GET http://localhost:3333/transactions/06d7fe7f-e681-471c-920e-a1c03310e727
+
+###
+
+GET http://localhost:3333/transactions/summary
