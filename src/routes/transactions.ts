@@ -5,6 +5,9 @@ import { randomUUID } from "node:crypto";
 import { checkSessionIdExists } from "../middlewares/check-session-id";
 
 export async function transactionRoute(server: FastifyInstance){
+  /*Ao utilizar hooks globais aqui fica disponível para as rotas do escopo,
+  para utilizar em todas as rotas, é necessário adiciona ao arquivo principal do server.*/
+
   server.get("/",{ preHandler:[checkSessionIdExists] }, async (request, reply) => {
     const { sessionId } = request.cookies
 
